@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+.nametext{
+    font-family: cursive;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+    
+}
+
+.profilediv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profileimg{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 2px solid #14b8a6;
+transition:transform 0.4s ease;
+}
+
+.profileimg:hover{
+    transform:scale(1.2);
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    background-color: #14b8a6;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouttext{
+    padding: 20px;
+    max-width: 85%;
+}
+/* .flexr{
+    display: flex;
+    justify-content: space-between;
+} */
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    color:#14b8a6;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero h3{
+    margin-top:15px;
+    color:#14b8a6;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.buttons a{
+    transition: transform 0.3s ease;
+}
+
+.buttons a:hover{
+    transform:scale(1.1);
+}
+
+.btn,
+.btn-outline{
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
+}
+
+.btn{
+    background:#38bdf8;
+    color:#000;
+}
+
+.btn-outline{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.section{
+    padding:100px 10%;
+}
+
+.contactsec{
+    background-color: #1e293b;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 10%;
+}
+
+.section h2{
+    text-align:start;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+.about-container{
+    background-color: #1e293b;
+    text-align:start;
+    line-height:2;
+    display: flex;
+    border-radius:15px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    cursor: pointer;
+    border-radius:15px;
+    text-align:center;
+   
+}
+
+.card:hover{
+    box-shadow:0 15px 30px rgba(20,184,166,.3);
+}
+
+.card i{
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    box-shadow:0 15px 30px rgba(20,184,166,.3);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.contact-box{
+    text-align:start;
+}
+
+.contact-box p{
+    margin:15px 0;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    font-size:30px;
+    color:#38bdf8;
+    margin:0 15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+/* .developer-stats{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+} */
+
+.stat-card{
+    /* text-align:center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.stat-card h2{
+    font-size:2.8rem;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:5px;
+}
+
+.stat-card span{
+    font-size:1rem;
+    opacity:.9;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    cursor: pointer;
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
