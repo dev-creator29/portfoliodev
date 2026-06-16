@@ -19,3 +19,10 @@ document.querySelectorAll(".card, .project-card").forEach(card => {
     card.style.transform = "translateY(30px)";
     card.style.transition = "0.6s ease";
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});

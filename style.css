@@ -40,6 +40,15 @@ nav ul li{
     
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
 .profilediv{
     display: flex;
     align-items: center;
@@ -60,8 +69,8 @@ transition:transform 0.4s ease;
 }
 
 .photo{
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: #14b8a6;
     border-radius: 15px 0px 0px 15px;
     display: flex;
@@ -77,7 +86,6 @@ transition:transform 0.4s ease;
     display: flex;
     justify-content: space-between;
 } */
-
 nav a{
     color:white;
     text-decoration:none;
@@ -292,3 +300,48 @@ footer{
     }
 }
 
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #14b8a6;
+        gap: 15px;
+    }
+    
+    .about-container{
+      flex-direction: column;
+    }
+    
+    .photo{
+    min-width: 200px;
+    min-height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    }
+     
+    .abouttext{
+    max-width: 100%;
+    }
+
+    nav ul li{
+    margin-left: 0px;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    nav {
+        position: relative;
+    }
+}
