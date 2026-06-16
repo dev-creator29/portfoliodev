@@ -332,6 +332,10 @@ footer{
     .abouttext{
     max-width: 100%;
     }
+     
+    nav a:hover{
+        color: gray;
+    }
 
     nav ul li{
     margin-left: 0px;
