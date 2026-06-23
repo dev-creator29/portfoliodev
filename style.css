@@ -81,6 +81,7 @@ transition:transform 0.4s ease;
 .abouttext{
     padding: 20px;
     max-width: 85%;
+    text-align: justify;
 }
 /* .flexr{
     display: flex;
